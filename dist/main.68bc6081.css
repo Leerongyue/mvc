@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+body {
+  /* 隐藏滚动条 */
+  overflow: hidden;
+}
+body .page section {
+  border: 1px solid gray;
+  width: 50vw;
+  height: 50vh;
+}
+body .page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app1 {
+}
+.app1 .output {
+}
+.app1 .action {
+}
+
+.app2 {
+}
+.app2 .bar {
+  display: flex;
+}
+.app2 .bar > li {
+  border: 1px solid gray;
+  width: 50%;
+  padding-left: 150px;
+}
+.app2 .bar > li.selected {
+  background: black;
+  color: white;
+}
+.app2 .context {
+  display: flex;
+}
+.app2 .context > li {
+  border: 1px solid gray;
+  width: 50%;
+  padding-left: 150px;
+  display: none;
+}
+.app2 .context > li.active {
+  display: block;
+}
+
+.app3 {
+}
+.app3 .square {
+  border: 1px solid gray;
+  width: 10vw;
+  height: 10vw;
+  margin-top: 5vw;
+  margin-left: 5vw;
+  transition: transform 500ms linear;
+}
+.app3 .square.active {
+  transform: translateX(30vw);
+}
+
+.app4 {
+}
+.app4 .circle {
+  border: 1px solid gray;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  margin-top: 5vw;
+  margin-left: 15vw;
+}
+@keyframes changeColor {
+  0% {
+    background: #000;
+  }
+  100% {
+    background: red;
+  }
+}
+.app4 .circle.active {
+  animation: changeColor 1s linear alternate;
+}
+
+
+/*# sourceMappingURL=main.68bc6081.css.map */

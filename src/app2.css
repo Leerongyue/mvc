@@ -1,0 +1,26 @@
+.app2 {
+}
+.app2 .bar {
+  display: flex;
+}
+.app2 .bar > li {
+  border: 1px solid gray;
+  width: 50%;
+  padding-left: 150px;
+}
+.app2 .bar > li.selected {
+  background: black;
+  color: white;
+}
+.app2 .context {
+  display: flex;
+}
+.app2 .context > li {
+  border: 1px solid gray;
+  width: 50%;
+  padding-left: 150px;
+  display: none;
+}
+.app2 .context > li.active {
+  display: block;
+}
